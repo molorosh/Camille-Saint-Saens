@@ -127,3 +127,103 @@ h2 {
   left: calc(50% + cos(var(--angle)) * var(--radius));
   transform: translate(-50%, -50%);
 }
+
+.circle:hover{
+    height: auto;
+}
+
+.circle:hover .dot {
+    position: relative;
+    background: hsl(calc(sibling-index() * 9), 100%, 80%);
+    min-width: calc(sibling-index() * 9px);
+    border-radius: 4px;
+    height: 10px;
+    top: 0px;
+    left: 0px;
+    transform: none;
+    margin-bottom: 2px;
+}
+
+.static-spinner {
+
+    --thickness: 9px;
+    --zero-thickness: 0px;
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border: var(--thickness) solid transparent;
+    border-top: var(--thickness) solid lime;
+    border-right: var(--zero-thickness) solid transparent;
+    border-bottom: var(--thickness) solid lime;
+    border-left: var(--zero-thickness) solid transparent;
+    border-radius: 100%;
+    animation: spin-scroller linear;
+    animation-timeline: scroll();
+    animation-duration: auto;
+}
+
+@keyframes spin-scroller {
+    to {
+        transform: rotate(-360deg);
+        border-color: cyan;
+    }
+}
+
+.static-spinner2 {
+
+    --thickness: 9px;
+    --zero-thickness: 0px;
+    position: fixed;
+    transform: rotate(-60deg);
+    top: 2rem;
+    left: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border: var(--thickness) solid transparent;
+    border-top: var(--thickness) solid lime;
+    border-right: var(--zero-thickness) solid transparent;
+    border-bottom: var(--thickness) solid lime;
+    border-left: var(--zero-thickness) solid transparent;
+    border-radius: 100%;
+    animation: spin-scroller2 linear;
+    animation-timeline: scroll();
+    animation-duration: auto;
+}
+
+@keyframes spin-scroller2 {
+    to {
+        transform: rotate(-420deg);
+        border-color: cyan;
+    }
+}
+
+.static-spinner3 {
+
+    --thickness: 9px;
+    --zero-thickness: 0px;
+    position: fixed;
+    transform: rotate(-120deg);
+    top: 2rem;
+    left: 2rem;
+    width: 2rem;
+    height: 2rem;
+    border: var(--thickness) solid transparent;
+    border-top: var(--thickness) solid lime;
+    border-right: var(--zero-thickness) solid transparent;
+    border-bottom: var(--thickness) solid lime;
+    border-left: var(--zero-thickness) solid transparent;
+    border-radius: 100%;
+    animation: spin-scroller3 linear;
+    animation-timeline: scroll();
+    animation-duration: auto;
+}
+
+@keyframes spin-scroller3 {
+    to {
+        transform: rotate(-480deg);
+        border-color: cyan;
+    }
+}
+
