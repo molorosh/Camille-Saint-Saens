@@ -1,0 +1,26 @@
+{
+  "name": "camille-saint-saens",
+  "version": "1.0.0",
+  "description": "a small site for neat CSS tricks",
+  "homepage": "https://github.com/molorosh/Camille-Saint-Saens#readme",
+  "bugs": {
+    "url": "https://github.com/molorosh/Camille-Saint-Saens/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/molorosh/Camille-Saint-Saens.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "localhost.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node localhost.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
